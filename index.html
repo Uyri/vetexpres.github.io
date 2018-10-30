@@ -1,0 +1,705 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ветэкспресс</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" >
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css" >
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.default.css" >
+		<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" >
+		<link rel="stylesheet" type="text/css" href="css/style.css" >
+    </head>
+    <body>  
+    <!-- Модальное Окно  -->
+		<div id="overlay" class="hidden-xs">
+		    <div class="popup">
+		        <h2>Обратиться</h2>
+		        <p>
+		            Если у Вас есть предложения или вопросы по качеству сервиса, а также любые идеи по работе компании — направляйте их нам и Ваше обращение будет рассмотрено Генеральным директором компании.  
+		         </p>
+		         
+		         <p><span>Мы заботимся о наших клиентах и готовы ответить на все ваши вопросы</span></p>
+				<div class="form">					
+					<div class="form-bid">											
+						<input type="text" class="form-control family" id="" placeholder="Фамилия">
+						<input type="phone" class="form-control name" id="" placeholder="Имя">
+						<input type="email" class="form-control mail" id="" placeholder="E-mail">
+						<input type="email" class="form-control repeat-mail" id="" placeholder="Повторите E-mail">
+						<input type="phone" class="form-control phone" id="" placeholder="Мобильный телефон">						
+						<label for="tems" class="">Тема обращения</label><br>
+						<select id="tems" class="form__control tems">
+							<option value="Предложение">Предложение</option>
+							<option>Предложение</option>
+						</select><br>						
+						<label for="comments" class="comments">Текст</label>						
+						<textarea id="comments" class="text" rows="3" placeholder="Текст обращения"></textarea>
+					</div>
+					<p><input type="checkbox" name="" value="" class="notrobot">Я не робот</p>
+					<button type="submit" class="btn btn-default but-bord">Отправить</button>							
+				</div>         
+		
+		        <button class="close" title="Закрыть" onclick="document.getElementById('overlay').style.display='none';"></button>
+		    </div>
+		</div>  	
+
+		<header class="header">	
+			<div class="container">
+				<div class="header__logo">										
+						<img class="hidden-sm hidden-xs" src="./img/logo.png">										
+						<img class="hidden-lg hidden-md header__logo" src="./img/logo320.png">												
+				</div>					
+				<div class="header__menu">							
+					<button class="hidden-lg hidden-md header__nav-button header__burger-menu">
+						<img class="logo" src="./img/menu320.png">
+					</button>							
+					<nav class="header__menu-nav">
+						<ul>
+				            <li><a href="#">О продукте</a></li>
+				            <li><a href="#">отзывы клиентов</a></li>
+				            <li><a href="#">Наши специалисты</a></li>
+				            <li><a href="#">скидки</a></li>
+				        </ul>
+					</nav>
+				</div>										
+			</div>	
+		</header>		
+		<div class="promo">
+			<div class="container">				
+				<div class="promo__caption hover-underline-animation">						
+					<h1>
+						Ваш <span>ветеринарный эксперт</span><br>всегда <span>рядом</span>
+					</h1>						
+				</div>				
+				<div class="promo__phone hidden-xs">
+					<a href="tel:+74953857356">
+						+ 7(499)216-61-26
+					</a>
+					<br>
+					<a href="tel:8-800-775-61-26">
+						8-800-775-61-26
+					</a>
+				</div>				
+				<div class="promo__meet text__h3">
+					<h3>
+						Когда и где вам удобно, круглосуточно и без выходных					
+					</h3>
+				</div>
+				<div class="promo__socseti hidden-sm hidden-xs">											
+					<ul>
+						<li><a href="#"><img class="promo__socseti-image1"></a></li>
+						<li><a href="#"><img class="promo__socseti-image2"></a></li>
+						<li><a href="#"><img class="promo__socseti-image3"></a></li>
+						<li><a href="#"><img class="promo__socseti-image4"></a></li>
+						<li><a href="#"><img class="promo__socseti-image5"></a></li>
+					</ul>
+				</div>
+				<div class="check">
+					<div class="row">
+						<div class="col-lg-6  col-md-6 col-sm-12 col-xs-12">
+							<button type="button" class="btn button check-card">активировать карту</button>							
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">	
+							<button type="button" class="btn button">войти в веткабинет</button>							
+						</div>	
+					</div>	
+				</div>									
+				<div class="promo__link">
+					<p class="hover-underline-animation">Служба заботы о клиентах</p>
+				</div>									
+			</div>	
+		</div>
+		<div class="media">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+						<div class="media__img ">
+							<img src="./img/doctor.png">
+						</div>						
+					</div>				
+					<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+						<div class="media__text text__h2"> 
+							<h2>«ВетЭксперт» – помогаем <br> заботиться и экономить!</h2>
+							<ul>
+								<li>Консультации экспертов-ветеринаров по телефону;</li>
+								<li>перепроверка диагноза лучшими ветеринарами Москвы по сканам документов;</li>
+								<li>подробные письменные рекомендации по содержанию и кормлению в вашем «Личном кабинете».</li>
+							</ul>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>	
+		<div class="carousel">
+			<div class="container">					
+				<h2 class="carousel__h2 text__h2">Карта ВетЭксперт помогает заботиться <br> о вашем питомце!</h2>												
+				<button class="hidden-lg hidden-md carousel__menu-bottom">
+					Здоровье
+				</button>							
+				<div class="carousel__menu">
+					<ul class="carousel__menu-ul">
+			            <li><a href="#">Здоровье</a></li>
+			            <li><a href="#">Питание</a></li>
+			            <li><a href="#">Содержание</a></li>
+			            <li><a href="#">Правовая поддержка</a></li>
+			            <li><a href="#">Эксперты</a></li>
+			            <li><a href="#">РИЭВЖ</a></li>							
+		        	</ul>	
+				</div>					
+				<div class="owl-carousel owl-theme owl-car1">					
+		 			<div class="carousel__scrollbanner">	
+		 				<div class="carousel__lead-in">
+				 			Окажем первую <br> доврачебную помощь 24/7						 		
+		 				</div>			 				
+		 				<div class="carousel__scrollbanner-text">
+				 			<h2>С вашим питомцем что-то не так, <br> или случилось неожиданное, <br> вы растерялись и не знаете, что делать?</h2>
+				 			<p>Просто достаньте свою карту ВетЭксперт, и свяжитесь с нами из любого места и в любое время.</p><br>
+							<p><b>Круглосуточно,</b> без перерывов и выходных, наши врачи готовы выслушать ваш вопрос, успокоить, дать совет<br> 
+								по первой помощи, подобрать клинику и определиться с дальнейшими действиями. Это поможет сберечь ваше<br> время и <b>сократить расходы</b> на обследование и лечение вашего питомца.</p><br>
+							<p>Для наилучшего решения любой проблемы по здоровью вашего друга есть одно действие – <b>обращение 
+								в ВетЭксперт.</b></p>
+		 				</div>		 				
+			 		</div>	
+		 			<div class="carousel__scrollbanner">	
+		 				<div class="carousel__lead-in">
+				 			Окажем первую <br> доврачебную помощь 24/7						 		
+		 				</div>			 				
+		 				<div class="carousel__scrollbanner-text">
+				 			<h2>С вашим питомцем что-то не так, <br> или случилось неожиданное, <br> вы растерялись и не знаете, что делать?</h2>
+				 			<p>Просто достаньте свою карту ВетЭксперт, и свяжитесь с нами из любого места и в любое время.</p><br>
+							<p><b>Круглосуточно,</b> без перерывов и выходных, наши врачи готовы выслушать ваш вопрос, успокоить, дать совет<br> 
+								по первой помощи, подобрать клинику и определиться с дальнейшими действиями. Это поможет сберечь ваше<br> время и <b>сократить расходы</b> на обследование и лечение вашего питомца.</p><br>
+							<p>Для наилучшего решения любой проблемы по здоровью вашего друга есть одно действие – <b>обращение 
+								в ВетЭксперт.</b></p>
+		 				</div>		 				
+			 		</div>	
+		 			<div class="carousel__scrollbanner">	
+		 				<div class="carousel__lead-in">
+				 			Окажем первую <br> доврачебную помощь 24/7						 		
+		 				</div>			 				
+		 				<div class="carousel__scrollbanner-text">
+				 			<h2>С вашим питомцем что-то не так, <br> или случилось неожиданное, <br> вы растерялись и не знаете, что делать?</h2>
+				 			<p>Просто достаньте свою карту ВетЭксперт, и свяжитесь с нами из любого места и в любое время.</p><br>
+							<p><b>Круглосуточно,</b> без перерывов и выходных, наши врачи готовы выслушать ваш вопрос, успокоить, дать совет<br> 
+								по первой помощи, подобрать клинику и определиться с дальнейшими действиями. Это поможет сберечь ваше<br> время и <b>сократить расходы</b> на обследование и лечение вашего питомца.</p><br>
+							<p>Для наилучшего решения любой проблемы по здоровью вашего друга есть одно действие – <b>обращение 
+								в ВетЭксперт.</b></p>
+		 				</div>		 				
+			 		</div>					 					
+		 			<div class="carousel__scrollbanner">	
+		 				<div class="carousel__lead-in">
+				 			Окажем первую <br> доврачебную помощь 24/7						 		
+		 				</div>			 				
+		 				<div class="carousel__scrollbanner-text">
+				 			<h2>С вашим питомцем что-то не так, <br> или случилось неожиданное, <br> вы растерялись и не знаете, что делать?</h2>
+				 			<p>Просто достаньте свою карту ВетЭксперт, и свяжитесь с нами из любого места и в любое время.</p><br>
+							<p><b>Круглосуточно,</b> без перерывов и выходных, наши врачи готовы выслушать ваш вопрос, успокоить, дать совет<br> 
+								по первой помощи, подобрать клинику и определиться с дальнейшими действиями. Это поможет сберечь ваше<br> время и <b>сократить расходы</b> на обследование и лечение вашего питомца.</p><br>
+							<p>Для наилучшего решения любой проблемы по здоровью вашего друга есть одно действие – <b>обращение 
+								в ВетЭксперт.</b></p>
+		 				</div>		 				
+			 		</div>					 					
+		 			<div class="carousel__scrollbanner">	
+		 				<div class="carousel__lead-in">
+				 			Окажем первую <br> доврачебную помощь 24/7						 		
+		 				</div>			 				
+		 				<div class="carousel__scrollbanner-text">
+				 			<h2>С вашим питомцем что-то не так, <br> или случилось неожиданное, <br> вы растерялись и не знаете, что делать?</h2>
+				 			<p>Просто достаньте свою карту ВетЭксперт, и свяжитесь с нами из любого места и в любое время.</p><br>
+							<p><b>Круглосуточно,</b> без перерывов и выходных, наши врачи готовы выслушать ваш вопрос, успокоить, дать совет<br> 
+								по первой помощи, подобрать клинику и определиться с дальнейшими действиями. Это поможет сберечь ваше<br> время и <b>сократить расходы</b> на обследование и лечение вашего питомца.</p><br>
+							<p>Для наилучшего решения любой проблемы по здоровью вашего друга есть одно действие – <b>обращение 
+								в ВетЭксперт.</b></p>
+		 				</div>		 				
+			 		</div>				 			
+		 			<div class="carousel__scrollbanner">	
+		 				<div class="carousel__lead-in">
+				 			Окажем первую <br> доврачебную помощь 24/7						 		
+		 				</div>			 				
+		 				<div class="carousel__scrollbanner-text">
+				 			<h2>С вашим питомцем что-то не так, <br> или случилось неожиданное, <br> вы растерялись и не знаете, что делать?</h2>
+				 			<p>Просто достаньте свою карту ВетЭксперт, и свяжитесь с нами из любого места и в любое время.</p><br>
+							<p><b>Круглосуточно,</b> без перерывов и выходных, наши врачи готовы выслушать ваш вопрос, успокоить, дать совет<br> 
+								по первой помощи, подобрать клинику и определиться с дальнейшими действиями. Это поможет сберечь ваше<br> время и <b>сократить расходы</b> на обследование и лечение вашего питомца.</p><br>
+							<p>Для наилучшего решения любой проблемы по здоровью вашего друга есть одно действие – <b>обращение 
+								в ВетЭксперт.</b></p>
+		 				</div>		 				
+			 		</div>						 						
+				</div>
+			</div>
+		</div>	
+		<div class="carousel__client">			
+			<div class="container">
+				<div class="carousel__h2 text__h2">
+						<h2>Как мы помогли нашим клиентам</h2>
+				</div>										
+				<div class="owl-carousel owl-theme owl-car2">					
+					<div>
+			 			<div class="wrapper__scrollbanner">
+			 				<div class="wrapper__scrollbanner-text">
+					 			<h4>Михаил Викторович</h4>
+					 			<p>питомец: <span>кошка</span></p>
+					 			<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 			<a href="#">подробнее</a>
+			 				</div>
+				 		</div>						 					 				 			
+			 			<div class="wrapper__scrollbanner">
+			 				<div class="wrapper__scrollbanner-text">
+					 			<h4>Михаил Викторович</h4>
+					 			<p>питомец: <span>кошка</span></p>
+					 			<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 			<a href="#">подробнее</a>
+			 				</div>
+				 		</div>	
+				 		<div class="wrapper__scrollbanner">
+			 				<div class="wrapper__scrollbanner-text">
+					 			<h4>Михаил Викторович</h4>
+					 			<p>питомец: <span>кошка</span></p>
+					 			<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 			<a href="#">подробнее</a>
+			 				</div>
+				 		</div>		
+				 		<div class="wrapper__scrollbanner">
+			 				<div class="wrapper__scrollbanner-text">
+					 			<h4>Михаил Викторович</h4>
+					 			<p>питомец: <span>кошка</span></p>
+					 			<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 			<a href="#">подробнее</a>
+			 				</div>
+				 		</div>		
+				 		<div class="wrapper__scrollbanner">
+			 				<div class="wrapper__scrollbanner-text">
+					 			<h4>Михаил Викторович</h4>
+					 			<p>питомец: <span>кошка</span></p>
+					 			<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 			<a href="#">подробнее</a>
+			 				</div>
+				 		</div>		
+				 		<div class="wrapper__scrollbanner">
+			 				<div class="wrapper__scrollbanner-text">
+					 			<h4>Михаил Викторович</h4>
+					 			<p>питомец: <span>кошка</span></p>
+					 			<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 			<a href="#">подробнее</a>
+			 				</div>
+				 		</div>							 					 				 					 			
+			 		</div>						 
+			 		<div>
+			 			<div class="wrapper__scrollbanner">
+			 				<div class="wrapper__scrollbanner-text">
+					 			<h4>Михаил Викторович</h4>
+					 			<p>питомец: <span>кошка</span></p>
+					 			<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 			<a href="#">подробнее</a>
+			 				</div>
+				 		</div>						 					 				 			
+			 			<div class="wrapper__scrollbanner">
+			 				<div class="wrapper__scrollbanner-text">
+					 			<h4>Михаил Викторович</h4>
+					 			<p>питомец: <span>кошка</span></p>
+					 			<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 			<a href="#">подробнее</a>
+			 				</div>
+				 		</div>	
+				 		<div class="wrapper__scrollbanner">
+			 				<div class="wrapper__scrollbanner-text">
+					 			<h4>Михаил Викторович</h4>
+					 			<p>питомец: <span>кошка</span></p>
+					 			<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 			<a href="#">подробнее</a>
+			 				</div>
+				 		</div>		
+				 		<div class="wrapper__scrollbanner">
+			 				<div class="wrapper__scrollbanner-text">
+					 			<h4>Михаил Викторович</h4>
+					 			<p>питомец: <span>кошка</span></p>
+					 			<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 			<a href="#">подробнее</a>
+			 				</div>
+				 		</div>		
+				 		<div class="wrapper__scrollbanner">
+			 				<div class="wrapper__scrollbanner-text">
+					 			<h4>Михаил Викторович</h4>
+					 			<p>питомец: <span>кошка</span></p>
+					 			<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 			<a href="#">подробнее</a>
+			 				</div>
+				 		</div>		
+				 		<div class="wrapper__scrollbanner">
+			 				<div class="wrapper__scrollbanner-text">
+					 			<h4>Михаил Викторович</h4>
+					 			<p>питомец: <span>кошка</span></p>
+					 			<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 			<a href="#">подробнее</a>
+			 				</div>
+				 		</div>							 					 				 					 			
+			 		</div>						 				
+	 			</div>
+	 		</div>
+	 	</div>
+	 	<div class="carousel__doctor">
+	 		<div class="container">		 			
+	 			<div class="carousel__h2 text__h2">
+						<h2>Почему мы делаем это лучше всех</h2>
+						<h4>У нас работают только профессиональные ветеринары, с многолетним опытом практической работы.</h4>
+				</div>	
+	 			<div class="owl-carousel owl-theme owl-car3">
+				    <div class="wrapper__scrollbanner">
+				    	<div class="wrapper__scrollbanner-text">
+					    	<img class="wrapper__scrollbanner-img" src="./img/girl.png">
+					    	<h4>Валентина Ивановна</h4>
+					 		<p><span>Главный врач</span></p>
+					 		<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 		<a href="#">подробнее</a>
+				 		</div>
+					</div>
+				    <div class="wrapper__scrollbanner">
+				    	<div class="wrapper__scrollbanner-text">
+					    	<img class="wrapper__scrollbanner-img" src="./img/girl.png">
+					    	<h4>Валентина Ивановна</h4>
+					 		<p><span>Главный врач</span></p>
+					 		<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 		<a href="#">подробнее</a>
+				 		</div>
+					</div>
+				   <div class="wrapper__scrollbanner">
+				    	<div class="wrapper__scrollbanner-text">
+					    	<img class="wrapper__scrollbanner-img" src="./img/girl.png">
+					    	<h4>Валентина Ивановна</h4>
+					 		<p><span>Главный врач</span></p>
+					 		<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 		<a href="#">подробнее</a>
+				 		</div>
+					</div>			
+					<div class="wrapper__scrollbanner">
+				    	<div class="wrapper__scrollbanner-text">
+					    	<img class="wrapper__scrollbanner-img" src="./img/girl.png">
+					    	<h4>Валентина Ивановна</h4>
+					 		<p><span>Главный врач</span></p>
+					 		<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 		<a href="#">подробнее</a>
+				 		</div>
+					</div>		
+					<div class="wrapper__scrollbanner">
+				    	<div class="wrapper__scrollbanner-text">
+					    	<img class="wrapper__scrollbanner-img" src="./img/girl.png">
+					    	<h4>Валентина Ивановна</h4>
+					 		<p><span>Главный врач</span></p>
+					 		<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 		<a href="#">подробнее</a>
+				 		</div>
+					</div>		
+					<div class="wrapper__scrollbanner">
+				    	<div class="wrapper__scrollbanner-text">
+					    	<img class="wrapper__scrollbanner-img" src="./img/girl.png">
+					    	<h4>Валентина Ивановна</h4>
+					 		<p><span>Главный врач</span></p>
+					 		<p class="p-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+					 		<a href="#">подробнее</a>
+				 		</div>
+					</div>			   
+				</div>
+			</div>		
+		</div>
+		<div class="vetcards">
+			<div class="container">
+				<div class="vetcards__text text__h2">
+					<h2>Карта ВетЭксперт <span>экономит</span> ваши деньги!</h2>
+					<h4>
+						Дисконтный клуб «ВетЭксперт» — уникальная система скидок и специальных предложений для владельцев домашних животных любого вида. Список партнеров дисконтного клуба постоянно расширяется. 
+						С каждым днем мы становимся еще ближе.
+					</h4>
+				</div>
+				<div class="vetcards__line">	
+					 <img src="img/line.png">				
+				</div>
+				<div class="vetcards__wrapper hidden-xs">					
+					<div class="row">						
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">		
+							<div class="vetcards__wrapper-item">
+						        <div class="vetcards__wrapper-image vetcards__wrapper-image-1"></div>
+								<p>Скидки в крупных сетях зоомагазинов, ветеринарных клиниках, гостиницах и аптеках.</p>
+					        </div>
+					    </div>
+						<div class="col-lg-4 col-md-4 col-sm-12  col-xs-12">
+					  		<div class="vetcards__wrapper-item">						  		
+				            	<div class="vetcards__wrapper-image vetcards__wrapper-image-2"></div>				            		
+								<p>Более тысячи магазинови клиник в 310 городах по всей России.</p>								
+				            </div>
+				    	</div>				    	
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="vetcards__wrapper-item">								
+					            <div class="vetcards__wrapper-image vetcards__wrapper-image-3"></div>
+								<p>Каждый партнер программы делает уникальное предложение держателям карт. Скидки до 25% и другие спецпредложения.</p>			
+				            </div>
+			        	</div>
+			       	</div>
+			    </div> 	
+			    <div class="vetcards__wrapper hidden-lg hidden-md hidden-sm">					
+					<div class="row">
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+							<div class="owl-carousel owl-theme owl-car4">								
+								<div class="vetcards__wrapper-item">						         
+						            <div class="vetcards__wrapper-image vetcards__wrapper-image-1"></div>
+									<p>Скидки в крупных сетях зоомагазинов, ветеринарных клиниках, гостиницах и аптеках.</p>								
+						        </div>
+						    </div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12  col-xs-12">
+							<div class="owl-carousel owl-theme owl-car4">							
+						  		<div class="vetcards__wrapper-item">							  		
+				            		<div class="vetcards__wrapper-image vetcards__wrapper-image-2"></div>				            		
+									<p>Более тысячи магазинови клиник в 310 городах по всей России.</p>
+					            </div>
+					    	</div>
+				    	</div>
+				    	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				    		<div class="owl-carousel owl-theme owl-car4">							
+								<div class="vetcards__wrapper-item">									
+					                <div class="vetcards__wrapper-image vetcards__wrapper-image-3"></div>
+									<p>Каждый партнер программы делает уникальное предложение держателям карт. Скидки до 25% и другие спецпредложения.</p>
+					            </div>
+				        	</div>
+			       		</div>
+			       </div> 	
+			    </div> 				
+			</div>
+		</div>
+		<div class="vetcards__discont">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-7 col-sm-12 col-xs-12">
+						<div class="vetcards__discont-img">
+							<img src="img/hand.png">
+						</div>
+					</div>
+					<div class="col-lg-7 col-md-5 col-sm-12 col-xs-12">
+						<div class="vetcards__discont-text">
+							<p>Просто покажите карту «ВетЭКсперт» на кассе и сэкономьте до 25% от стоимости покупки!</p>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>	
+		<div class="discont">
+			<div class="container">									
+						<div  class="text__h2">
+							<h2>Дисконтный клуб «ВетЭксперт»</h2>
+						</div>					
+				
+				<div class="discont__form">
+					<div class="discont__form-button">
+						<p>
+							<span class="butcheck"><input type="checkbox" name="" id="check1"><label for="check1">Зоомагазин</label></span>
+							<input type="checkbox" name="" id="check2"><label for="check2">Ветклиника</label>
+						</p>
+					</div>
+					<div class="discont__form-region">
+						<div class="btn-group" role="group" aria-label="...">
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-default dropdown-toggle discont__form-region-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									Москва
+									<span class="caret caret-reg"></span>
+								</button>
+								<ul class="dropdown-menu">
+								    <li><a href="#">Москва</a></li>
+									<li><a href="#">Москва</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>		
+				<div class="discont__href">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="discont__href-wrapper">
+				                <div class="discont__item">
+				                	<p class="discont__item-text"><span class="ot">от</span><span class="percent">20%</span></p>
+				                	<p class="discont__item-img"><img src="img/zooland.png"></p>
+				                	<div class="discont__item-link">
+				                		<a href="zooland.ru">zooland.ru</a>				                	
+				                	</div>	
+				                </div>
+				            </div>
+			        	</div>
+			        	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="discont__href-wrapper">
+				                <div class="discont__item">
+				                	<p class="discont__item-text"><span class="ot">от</span><span class="percent">20%</span></p>
+				                	<p class="discont__item-img"><img src="img/zooland.png"></p>
+				                	<div class="discont__item-link">
+				                		<a href="zooland.ru">zooland.ru</a>				                	
+				                	</div>	
+				                </div>
+				            </div>
+			        	</div>
+			        	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="discont__href-wrapper">
+				                <div class="discont__item">
+				                	<p class="discont__item-text"><span class="ot">от</span><span class="percent">20%</span></p>
+				                	<p class="discont__item-img"><img src="img/zooland.png"></p>
+				                	<div class="discont__item-link">
+				                		<a href="zooland.ru">zooland.ru</a>				                	
+				                	</div>	
+				                </div>
+				            </div>
+			        	</div>
+			        	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="discont__href-wrapper">
+				                <div class="discont__item">
+				                	<p class="discont__item-text"><span class="ot">от</span><span class="percent">20%</span></p>
+				                	<p class="discont__item-img"><img src="img/zooland.png"></p>
+				                	<div class="discont__item-link">
+				                		<a href="zooland.ru">zooland.ru</a>				                	
+				                	</div>	
+				                </div>
+				            </div>
+			        	</div>
+			        	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="discont__href-wrapper">
+				                <div class="discont__item">
+				                	<p class="discont__item-text"><span class="ot">от</span><span class="percent">20%</span></p>
+				                	<p class="discont__item-img"><img src="img/zooland.png"></p>
+				                	<div class="discont__item-link">
+				                		<a href="zooland.ru">zooland.ru</a>				                	
+				                	</div>	
+				                </div>
+				            </div>
+			        	</div>
+			        	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="discont__href-wrapper">
+				                <div class="discont__item">
+				                	<p class="discont__item-text"><span class="ot">от</span><span class="percent">20%</span></p>
+				                	<p class="discont__item-img"><img src="img/zooland.png"></p>
+				                	<div class="discont__item-link">
+				                		<a href="zooland.ru">zooland.ru</a>				                	
+				                	</div>	
+				                </div>
+				            </div>
+			        	</div>
+			        	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="discont__href-wrapper">
+				                <div class="discont__item">
+				                	<p class="discont__item-text"><span class="ot">от</span><span class="percent">20%</span></p>
+				                	<p class="discont__item-img"><img src="img/zooland.png"></p>
+				                	<div class="discont__item-link">
+				                		<a href="zooland.ru">zooland.ru</a>				                	
+				                	</div>	
+				                </div>
+				            </div>
+			        	</div>
+			        	<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+							<div class="discont__href-wrapper">
+				                <div class="discont__item">
+				                	<p class="discont__item-text"><span class="ot">от</span><span class="percent">20%</span></p>
+				                	<p class="discont__item-img"><img src="img/zooland.png"></p>
+				                	<div class="discont__item-link">
+				                		<a href="zooland.ru">zooland.ru</a>				                	
+				                	</div>	
+				                </div>
+				            </div>
+			        	</div>	        	
+	       			</div>	
+				</div>				
+			</div>
+		</div>
+		<div class="block-shops hidden-xs">
+			<div class="container">
+				<div class="discont__shops">			
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12">
+							<div class="discontshops__wrapper"> 							
+								<div class="discontshops__item discontshops__item-title">Тип</div>
+								<div class="discontshops__item discontshops__item-title">Название</div>						
+								<div class="discontshops__item discontshops__item-title">Скидка</div>
+								<div class="discontshops__item discontshops__item-title">Сайт</div>								
+							</div>
+							<div class="discontshops__wrapper"> 							
+								<div class="discontshops__item">Зоомагазин</div>
+								<div class="discontshops__item">Zooland</div>						
+								<div class="discontshops__item">от 20 % на котят</div>
+								<div class="discontshops__item"><a href="">Zooland.ru</a></div>								
+							</div>
+						</div>	
+						<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
+							<div class="discontshops__wrapper"> 							
+								<div class="discontshops__item">Зоомагазин</div>
+								<div class="discontshops__item">Zooland</div>						
+								<div class="discontshops__item">от 20 % на котят</div>
+								<div class="discontshops__item"><a href="">Zooland.ru</a></div>								
+							</div>
+						</div>	
+						<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
+							<div class="discontshops__wrapper"> 							
+								<div class="discontshops__item">Зоомагазин</div>
+								<div class="discontshops__item">Zooland</div>						
+								<div class="discontshops__item">от 20 % на котят</div>
+								<div class="discontshops__item"><a href="">Zooland.ru</a></div>								
+							</div>
+						</div>	 
+						<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
+							<div class="discontshops__wrapper"> 							
+								<div class="discontshops__item">Зоомагазин</div>
+								<div class="discontshops__item">Zooland</div>						
+								<div class="discontshops__item">от 20 % на котят</div>
+								<div class="discontshops__item"><a href="">Zooland.ru</a></div>								
+							</div>
+						</div>	
+						<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
+							<div class="discontshops__wrapper"> 							
+								<div class="discontshops__item">Зоомагазин</div>
+								<div class="discontshops__item">Zooland</div>						
+								<div class="discontshops__item">от 20 % на котят</div>
+								<div class="discontshops__item"><a href="">Zooland.ru</a></div>								
+							</div>
+						</div>	
+						<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
+							<div class="discontshops__wrapper"> 							
+								<div class="discontshops__item">Зоомагазин</div>
+								<div class="discontshops__item">Zooland</div>						
+								<div class="discontshops__item">от 20 % на котят</div>
+								<div class="discontshops__item"><a href="">Zooland.ru</a></div>								
+							</div>
+						</div>	
+						<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
+							<div class="discontshops__wrapper"> 							
+								<div class="discontshops__item">Зоомагазин</div>
+								<div class="discontshops__item">Zooland</div>						
+								<div class="discontshops__item">от 20 % на котят</div>
+								<div class="discontshops__item"><a href="">Zooland.ru</a></div>								
+							</div>
+						</div>	
+						<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
+							<div class="discontshops__wrapper"> 							
+								<div class="discontshops__item">Зоомагазин</div>
+								<div class="discontshops__item">Zooland</div>						
+								<div class="discontshops__item">от 20 % на котят</div>
+								<div class="discontshops__item"><a href="">Zooland.ru</a></div>								
+							</div>
+						</div>	
+						<div class="col-lg-12 col-md-12 col-sm-12 hidden-xs">
+							<div class="discontshops__wrapper"> 							
+								<div class="discontshops__item">Зоомагазин</div>
+								<div class="discontshops__item">Zooland</div>						
+								<div class="discontshops__item">от 20 % на котят</div>
+								<div class="discontshops__item"><a href="">Zooland.ru</a></div>								
+							</div>
+						</div>							
+					</div>					
+				</div>
+			</div>
+		</div>
+		<footer class="futer">								
+			<div class="container">
+				<p>ООО «ВетЭксперт»</p>
+				<a href=""><img src="img/pdf.png">Оферта</a>
+				<a href="">hello@vetexpert24.ru</a>
+			</div>			
+		</footer>
+		<script src="./js/jquery-3.1.1.min.js"></script>	
+		<script src="./js/bootstrap.js"></script>
+		<script src="./js/owl.carousel.js"></script>
+		<script src="./js/jquery-ui.js"></script>
+		<script src="./js/js.js"></script>	
+    </body>
+</html>
